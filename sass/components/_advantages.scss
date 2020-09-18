@@ -1,0 +1,150 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-left: 0px;
+  width: 270px;
+  height: 251px;
+}
+
+/* Антена */
+.antenna {
+  border: none;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $bg-color;
+}
+.icon-antenna {
+  margin-left: 103px;
+}
+
+/* Часы */
+.clock {
+  border: none;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $bg-color;
+}
+.icon-clock {
+  margin-left: 103px;
+}
+
+/* Диаграмма */
+.diagram {
+  border: none;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $bg-color;
+}
+.icon-diagram {
+  margin-left: 103px;
+}
+
+/* Астронавт */
+.astronaut {
+  border: none;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $bg-color;
+}
+.icon-astronaut {
+  margin-left: 103px;
+}
+
+.title {
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text {
+  margin: 0px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*Чем мы занимаемся*/
+.activity {
+  padding-bottom: 94px;
+}
+
+.activity-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  font-weight: 700;
+}
+
+.activity-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-text-white;
+  width: 250px;
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.development-options::before {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: rgba(47, 48, 58, 0.8);
+  opacity: 0.9;
+
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+}
+
+.development {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.development-options {
+  width: 370px;
+
+  position: relative;
+}

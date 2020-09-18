@@ -1,0 +1,262 @@
+/* Футер*/
+.footer {
+  background-color: $bg-color-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.conteiner-footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Оформление шрифтов в футере */
+
+.logo-footer {
+  margin-bottom: 20px;
+
+  color: $color-text-white;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.contacts .title-address {
+  margin-bottom: 9px;
+
+  color: $color-text-white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title-address:hover,
+  &__title-address:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts .title {
+  margin-bottom: 9px;
+  margin-top: 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title:hover,
+  &__title:focus {
+    color: $accent-color;
+  }
+}
+
+.footer .title-color {
+  color: $color-text-white;
+}
+
+/* Блоки */
+
+/* Общий ul футтера*/
+.list-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* общий */
+.social-networks {
+  padding: 0px;
+  margin-left: 70px;
+}
+
+/* лого, адрес */
+.contacts {
+  width: 231px;
+  font-style: normal;
+}
+
+.logo-footer,
+.title,
+.title-address {
+  display: block;
+  width: 231px;
+}
+
+.welcome {
+  color: $color-text-white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* соцсети */
+
+.social-footer {
+  display: flex;
+  justify-content: flex-star;
+  align-items: center;
+  padding: 0px;
+  width: 206px;
+}
+
+/* Социальные сети */
+
+/* Инстаграм */
+.link-instagram {
+  margin-right: 10px;
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.icon-instagram-footer {
+  fill: $primary-bg-color;
+}
+
+/* Твиттер */
+.link-twitter {
+  margin-right: 10px;
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.icon-twitter-footer {
+  fill: $primary-bg-color;
+}
+
+/* Фейсбук */
+.link-facebook {
+  margin-right: 10px;
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.icon-facebook-footer {
+  fill: $primary-bg-color;
+}
+
+/* Линкедин */
+
+.link-linkedin {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.icon-linkedin-footer {
+  fill: $primary-bg-color;
+}
+
+/* Кнопка подписаться */
+.button-subscribe {
+  border-radius: 4px;
+  padding-left: 29px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  border: 1px transparent;
+
+  color: $color-text-white;
+  background-color: $accent-color;
+  border: $accent-color;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  justify-content: flex-star;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.icon-send {
+  fill: $primary-bg-color;
+  margin-left: 10px;
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe-email {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $bg-color-footer;
+
+  padding-left: 16px;
+  color: $color-text-white;
+}
+
+.subscribe-section {
+  display: flex;
+  justify-content: flex-star;
+  align-items: center;
+}
+
+.subscribe-section.input::placeholder {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}

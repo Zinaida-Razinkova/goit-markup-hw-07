@@ -1,0 +1,127 @@
+/* Постоянные клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Клиент1 */
+.icon-client1 {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client1 {
+  fill: #afb1b8;
+}
+
+/* Клиент2  */
+.icon-client2 {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client2 {
+  fill: #afb1b8;
+}
+
+/* Клиент3  */
+.icon-client3 {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client3 {
+  fill: #afb1b8;
+}
+
+/* Клиент4  */
+.icon-client4 {
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client4 {
+  fill: #afb1b8;
+}
+
+/* Клиент5  */
+.icon-client5 {
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client5 {
+  fill: #afb1b8;
+}
+
+/* Клиент6  */
+.icon-client6 {
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client6 {
+  fill: #afb1b8;
+}
+
+.title-clients {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  font-weight: 700;
+}
+
+.list-clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
