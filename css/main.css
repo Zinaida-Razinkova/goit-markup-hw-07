@@ -650,7 +650,7 @@ textarea {
   margin-left: 103px;
 }
 
-.title {
+.detail .title {
   margin-left: 0px;
   margin-top: 30px;
   margin-right: 0px;
@@ -662,7 +662,7 @@ textarea {
   font-weight: bold;
 }
 
-.text {
+.detail .text {
   margin: 0px;
   font-weight: 400;
   font-size: 14px;
@@ -1094,7 +1094,7 @@ textarea {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts .title-address__title-address:hover, .contacts .title-address__title-address:focus {
+.contacts .title-address:hover, .contacts .title-address:focus {
   color: #2196f3;
 }
 
@@ -1110,7 +1110,7 @@ textarea {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts .title__title:hover, .contacts .title__title:focus {
+.contacts .title:hover, .contacts .title:focus {
   color: #2196f3;
 }
 

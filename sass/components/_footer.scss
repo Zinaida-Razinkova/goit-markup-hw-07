@@ -43,8 +43,8 @@
   line-height: 1.71;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__title-address:hover,
-  &__title-address:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -60,8 +60,8 @@
   text-transform: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__title:hover,
-  &__title:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
