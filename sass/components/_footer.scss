@@ -118,67 +118,13 @@
   width: 206px;
 }
 
-/* Социальные сети */
+/* Иконки соцсетей*/
 
 /* Инстаграм */
-.link-instagram {
-  margin-right: 10px;
 
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: $accent-color;
-  }
-}
-
-.icon-instagram-footer {
-  fill: $primary-bg-color;
-}
-
-/* Твиттер */
-.link-twitter {
-  margin-right: 10px;
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: $accent-color;
-  }
-}
-
-.icon-twitter-footer {
-  fill: $primary-bg-color;
-}
-
-/* Фейсбук */
-.link-facebook {
-  margin-right: 10px;
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: $accent-color;
-  }
-}
-
-.icon-facebook-footer {
-  fill: $primary-bg-color;
-}
-
-/* Линкедин */
-
+.link-instagram,
+.link-twitter,
+.link-facebook,
 .link-linkedin {
   border-radius: 50%;
   width: 44px;
@@ -191,6 +137,15 @@
   }
 }
 
+.link-instagram,
+.link-twitter,
+.link-facebook {
+  margin-right: 10px;
+}
+
+.icon-instagram-footer,
+.icon-twitter-footer,
+.icon-facebook-footer,
 .icon-linkedin-footer {
   fill: $primary-bg-color;
 }

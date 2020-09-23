@@ -57,77 +57,9 @@
   margin-bottom: 30px;
 }
 
-/* Инстаграм */
-.link-instagram {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: $primary-bg-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover .icon-instagram,
-  &:focus .icon-instagram {
-    fill: $primary-bg-color;
-    outline: none;
-  }
-}
-
-.icon-instagram {
-  fill: #afb1b8;
-}
-
-/* Твиттер */
-.link-twitter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: $primary-bg-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover .icon-twitter,
-  &:focus .icon-twitter {
-    fill: $primary-bg-color;
-    outline: none;
-  }
-}
-
-.icon-twitter {
-  fill: #afb1b8;
-}
-
-/* Фейсбук */
-.link-facebook {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: $primary-bg-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover .icon-facebook,
-  &:focus .icon-facebook {
-    fill: $primary-bg-color;
-    outline: none;
-  }
-}
-
-.icon-facebook {
-  fill: #afb1b8;
-}
-
-/* Линкедин */
-
+.link-instagram,
+.link-twitter,
+.link-facebook,
 .link-linkedin {
   display: flex;
   align-items: center;
@@ -138,14 +70,23 @@
   height: 44px;
   background-color: $primary-bg-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover .icon-linkedin,
-  &:focus .icon-linkedin {
-    fill: $primary-bg-color;
-    outline: none;
-  }
 }
 
+.link-linkedin:hover .icon-linkedin,
+.link-linkedin:focus .icon-linkedin,
+.link-facebook:hover .icon-facebook,
+.link-facebook:focus .icon-facebook,
+.link-twitter:hover .icon-twitter,
+.link-twitter:focus .icon-twitter,
+.link-instagram:hover .icon-instagram,
+.link-instagram:focus .icon-instagram {
+  fill: $primary-bg-color;
+  outline: none;
+}
+
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
 .icon-linkedin {
   fill: #afb1b8;
 }
