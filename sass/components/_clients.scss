@@ -17,14 +17,16 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-client1:hover,
-.icon-client2:hover,
-.icon-client3:hover,
-.icon-client4:hover,
-.icon-client5:hover,
-.icon-client6:hover {
-  fill: $accent-color;
-  border: 1px solid $accent-color;
+.icon-client1,
+.icon-client2,
+.icon-client3,
+.icon-client4,
+.icon-client5,
+.icon-client6 {
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
 }
 
 .client1,

@@ -3,6 +3,10 @@
   background-color: $bg-color-footer;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  .title-color {
+    color: $color-text-white;
+  }
 }
 
 .conteiner-footer {
@@ -17,6 +21,8 @@
 
 .logo-footer {
   margin-bottom: 20px;
+  display: block;
+  width: 231px;
 
   color: $color-text-white;
   font-family: Raleway, sans-serif;
@@ -34,42 +40,45 @@
   color: $accent-color;
 }
 
-.contacts .title-address {
-  margin-bottom: 9px;
+.contacts {
+  width: 231px;
+  font-style: normal;
 
-  color: $color-text-white;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .title-address {
+    margin-bottom: 9px;
+    display: block;
+    width: 231px;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+    color: $color-text-white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .title {
+    margin-bottom: 9px;
+    margin-top: 0px;
+    display: block;
+    width: 231px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
-
-.contacts .title {
-  margin-bottom: 9px;
-  margin-top: 0px;
-
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-transform: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.footer .title-color {
-  color: $color-text-white;
-}
-
 /* Блоки */
 
 /* Общий ul футтера*/
@@ -85,17 +94,6 @@
 }
 
 /* лого, адрес */
-.contacts {
-  width: 231px;
-  font-style: normal;
-}
-
-.logo-footer,
-.title,
-.title-address {
-  display: block;
-  width: 231px;
-}
 
 .welcome {
   color: $color-text-white;
@@ -206,12 +204,14 @@
   display: flex;
   justify-content: flex-star;
   align-items: center;
-}
 
-.subscribe-section.input::placeholder {
-  font-weight: 400px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  .input {
+    &::placeholder {
+      font-weight: 400px;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }

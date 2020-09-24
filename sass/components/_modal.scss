@@ -1,14 +1,3 @@
-/* Модальное окно */
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-
-  .modal {
-    transform: translate(-50%, -50%) scale(0.7);
-  }
-}
-
 .backdrop {
   z-index: 1;
 
@@ -21,6 +10,15 @@
 
   opacity: 1;
   transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    .modal {
+      transform: translate(-50%, -50%) scale(0.7);
+    }
+  }
 }
 
 .modal {
@@ -43,7 +41,6 @@
 }
 
 /* Кнопка закрытия */
-
 .button-close {
   display: flex;
   align-items: center;
@@ -58,23 +55,22 @@
   margin-right: 8px;
   margin-top: 8px;
   margin-left: 490px;
-}
 
-.button-close:focus .icon-close {
-  fill: $accent-color;
+  &:focus {
+    .icon-close {
+      fill: $accent-color;
+    }
+  }
 }
-
 .icon-close {
   fill: #000000;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover {
     fill: $accent-color;
   }
 }
 
 /* Форма в модальном окне */
-
 /* Заголовок */
 .modal-heading {
   font-weight: bold;
@@ -101,7 +97,6 @@
   align-items: center;
 }
 /* Форма */
-
 .modal-form {
   width: 528px;
   padding-left: 40px;
@@ -113,58 +108,73 @@
 }
 
 .form-field {
+  position: relative;
+
   margin-bottom: 10px;
 
   display: flex;
   flex-direction: column;
-}
 
-.form-field input,
-textarea {
-  margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 42px;
+  & input,
+  textarea {
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 42px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.form-field textarea {
-  margin: 0px;
-  padding: 15px;
+  & textarea {
+    margin: 0px;
+    padding: 15px;
 
-  width: 448px;
-  height: 120px;
-}
+    width: 448px;
+    height: 120px;
 
-.form-field label {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+    &::placeholder {
+      font-weight: 300px;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
 
-  color: $primary-text-color;
+      color: rgba(117, 117, 117, 0.5);
+    }
 
-  text-align: left;
-  margin-bottom: 4px;
-}
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+  & label {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
-.form-field input {
-  width: 448px;
-  height: 40px;
-}
+    color: $primary-text-color;
 
-.form-field textarea::placeholder {
-  font-weight: 300px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  & input {
+    width: 448px;
+    height: 40px;
 
-  color: rgba(117, 117, 117, 0.5);
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+  &:hover {
+    .icon-modal-name {
+      fill: $accent-color;
+    }
+  }
 }
 
 .link-contract {
@@ -173,27 +183,11 @@ textarea {
 }
 
 /* Иконки внутри форм */
-.form-field {
-  position: relative;
-
-  &:hover .icon-modal-name {
-    fill: $accent-color;
+.form-input {
+  &:focus-within {
+    color: $accent-color;
+    outline: none;
   }
-}
-
-.form-input:focus-within {
-  color: $accent-color;
-  outline: none;
-}
-
-.form-field input:hover,
-.form-field input:focus {
-  border: 1px solid $accent-color;
-}
-
-.form-field textarea:hover,
-.form-field textarea:focus {
-  border: 1px solid $accent-color;
 }
 
 .icon-modal-name {
@@ -204,7 +198,6 @@ textarea {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Чекбокс в модальном окне*/
-
 .icon-checkbox {
   /* -webkit-appearance: none;
    -moz-appearance: none;
@@ -218,6 +211,14 @@ textarea {
   padding: 0px;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked + .icon-checkbox-sprite {
+    background-color: $accent-color;
+    background-image: url("../images/full-check.svg");
+    background-size: contain;
+    background-origin: border-box;
+    border: 2px solid $accent-color;
+  }
 }
 
 .icon-checkbox-sprite {
@@ -229,14 +230,6 @@ textarea {
   margin-right: 7px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-checkbox:checked + .icon-checkbox-sprite {
-  background-color: $accent-color;
-  background-image: url("../images/full-check.svg");
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid $accent-color;
 }
 
 /* Кнопка отправить */
